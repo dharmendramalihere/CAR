@@ -1,12 +1,19 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: arial;
+
+}
+
 .nav {
     width: 100%;
     height: 70px;
-    border: 2px solid red;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    background-color: black;
-
+    /* border: 2px solid red; */
+    gap: 50px;
 }
 
 .logo {
@@ -15,20 +22,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid blue;
+    /* border: 2px solid gray; */
 }
 
 .logo img {
-    width: 200%;
+    width: 60px;
 }
 
 .nav ul {
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    border: 2px solid khaki;
-    color: white;
+    /* border: 1px solid forestgreen; */
 }
 
 .nav ul li {
@@ -36,623 +42,240 @@
 }
 
 .nav ul li a {
-    color: blue;
+    color: black;
     text-decoration: none;
     font-size: 18px;
 }
 
-.one {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #23262d;
-    flex-direction: column;
-    color: white;
-}
-
-.one h1 {
-    font-size: 60px;
-    padding-left: 200px;
-    width: 50%;
-}
-
-.one p {
-    width: 90%;
-    font-size: 20px;
-    /* border: 2px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.one button {
-    padding: 10px 15px;
-    border: none;
-    font-size: 20px;
-    border-radius: 25px;
-    background-color: white;
-}
-
-.one button:hover {
-    color: white;
-    background-color: orange;
-    transition: all 0.4s ease-in-out;
-}
-
-.two {
-    width: 100%;
-    height: 100vh;
-    border: 5px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* flex-direction: column; */
-    background-color: #23262d;
-
-    gap: 33px;
-}
-
-.card-teim1 {
-    width: 30%;
-    height: 50%;
-    border: 2px solid greenyellow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.card-teim1 h1 {
-    color: rgb(255, 166, 0);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 90px;
-
-}
-
-.card-teim1 h2 {
-    color: white;
-    width: 30%;
-    align-items: center;
-
-}
-
-
-
-
-.card-teim2 {
-    width: 30%;
-    height: 50%;
-    border: 2px solid greenyellow;
-}
-
-.card-teim2 h5 {
-    color: rgb(255, 166, 0);
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    font-size: 20px;
-
-}
-
-.card-teim2 h1 {
-    color: white;
-    font-size: 36px;
-    width: 79%;
-}
-
-
-
-.card-teim3 {
-    width: 30%;
-    height: 50%;
-    border: 2px solid greenyellow;
-}
-
-.card-teim3 p {
-    color: white;
-    align-items: center;
-    font-size: 20px;
-
-}
-
-.card-teim3 button {
-    padding: 10px 25px;
-    border: none;
-    font-size: 15px;
-    border-radius: 30px;
-    background-color: white;
-}
-
-.card-teim3 button:hover {
-    color: white;
-    background-color: orange;
-    transition: all 0.8s ease-in-out;
-}
-
-.three {
-    width: 100%;
-    height: 100vh;
-    /* border: 5px solid red; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #23262d;
-    gap: 20px;
-}
-
-
-.card1 {
-    width: 23%;
-    height: 90%;
-    border: 2px solid red;
-    background: url(h2-banner1-400x460.jpg);
-    background-size: cover;
-}
-
-.card1 h1 {
-    color: white;
-    font-size: 30px;
-    width: 30%;
-}
-
-.card1 P {
-    color: white;
-    font-size: 18px;
-}
-
-.card2 {
-    width: 23%;
-    height: 90%;
-    border: 2px solid red;
-    background: url(h10-category2.jpg);
-    background-size: cover;
-}
-
-.card2 h1 {
-    color: white;
-    font-size: 30px;
-    width: 30%;
-}
-
-.card2 P {
-    color: white;
-    font-size: 18px;
-}
-
-.card3 {
-    width: 23%;
-    height: 90%;
-    border: 2px solid red;
-    background: url(124c07073be78ce9cfb765d5a168738f.jpg);
-    background-size: cover;
-}
-
-.card3 h1 {
+.nav button {
+    padding: 18px 25px;
+    /* background-color: blue; */
     color: black;
-    font-size: 30px;
-    width: 30%;
-}
-
-.card3 P {
-    color: white;
     font-size: 18px;
+    border-radius: 30px;
 }
 
-.card4 {
-    width: 23%;
+.nav button:hover {
+    color: white;
+    background-color: blue;
+    transition: 1s all ease-in-out;
+}
+
+.con {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid lawngreen; */
+    
+}
+
+.con .left {
+    width: 40%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* border: 3px solid hotpink; */
+    gap: 30px;
+    padding-left: 50px;
+}
+.con .left h5{
+    font-size: 20px;
+    color: #7153d9;
+}
+.con .left h1{
+    font-size: 70px;
+    width: 80%;
+}
+
+.con .left p{
+    font-size: 20px;
+    width: 70%;
+}
+.con .left button{
+    padding: 18px 45px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+}
+/* --------right-------- */
+.con .right {
+    width: 60%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid darkgrey; */
+}
+
+
+.con .right img {
+    width: 100%;
     height: 90%;
-    border: 2px solid red;
-    background: url(leitch-img.jpg);
-    background-size: cover;
 }
 
-.card4 h1 {
-    color: white;
-    font-size: 30px;
-    width: 30%;
-}
+/* -----two---- */
 
-.card4 P {
-    color: white;
-    font-size: 18px;
-}
-
-.for {
+.two{
     width: 100%;
-    height: 40vh;
-    border: 5px solid red;
+    height: 100vh;
     display: flex;
-    align-items: start;
     justify-content: center;
-    background-color: #23262d;
-    flex-direction: column;
-    padding-left: 30px;
-    gap: 0px !important;
+    align-items: center;
+    /* border: 2px solid forestgreen; */
+  gap: 30px;
 }
-
-.for h1 {
-    color: white;
+.card1{
+    width: 28%;
+    height: 60%;
+    /* border: 3px solid goldenrod; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+}
+.card1 h6{
+    color: #7153d9;
     font-size: 50px;
-    width: 65%;
-    border: 2px solid honeydew;
-}
-
-.for h5 {
-    color: orange;
-    font-size: 30px;
-    border: 2px solid red;
-    /* padding-top: 80px; */
-}
-
-.cards {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid gray;
-    background-color: #23262d;
-    gap: 10px;
-}
-
-.card-1 {
-    width: 25%;
-    height: 70%;
-    /* border: 3px solid teal; */
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-1 h1 {
-    color: white;
-}
-
-.card-1 p {
-    color: white;
-    width: 80%;
-    font-size: 20px;
-    align-items: center;
-}
-
-
-.card-1 .img-sec {
-    width: 130px;
-    height: 130px;
-    background-color: white;
-    border-radius: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
 
 }
 
-.card-1 .img-sec img {
-    width: 150px;
-}
-
-.card-1 .img-sec:hover {
-    color: white;
-    background-color: orange;
-    transition: all 0.8s ease-in-out;
-    scale: 1.1;
-}
-
-
-.card-2 {
-    width: 25%;
-    height: 70%;
-    /* border: 3px solid teal; */
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-2 h1 {
-    color: white;
-}
-
-.card-2 p {
-    color: white;
+.card1 p{
     width: 90%;
-    font-size: 20px;
+    font-size: 18px;
     align-items: center;
 }
-
-
-
-.card-2 .img-sec {
-    width: 130px;
-    height: 130px;
-    background-color: white;
-    border-radius: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.card-2 .img-sec img {
-    width: 150px;
-
-}
-
-.card-2 .img-sec:hover {
-    color: white;
-    background-color: orange;
-    transition: all 0.8s ease-in-out;
-    scale: 1.1;
-}
-
-
-.card-3 {
-    width: 25%;
-    height: 70%;
-    /* border: 3px solid gold; */
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-3 .img-sec {
-    width: 130px;
-    height: 130px;
-    background-color: white;
-    border-radius: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.card-3 h1 {
-    color: white;
-}
-
-.card-3 p {
-    color: white;
-    width: 80%;
-    font-size: 20px;
-    align-items: center;
-}
-
-.card-3 .img-sec img {
-    width: 160%;
-}
-
-.card-3 .img-sec:hover {
-    color: white;
-    background-color: orange;
-    transition: all 0.8s ease-in-out;
-    scale: 1.1;
-}
-
-
-.card-4 {
-    width: 25%;
-    height: 70%;
-    /* border: 3px solid teal; */
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.card-4 h1 {
-    color: white;
-}
-
-.card-4 p {
-    color: white;
-    width: 90%;
-    font-size: 20px;
-    align-items: center;
-}
-
-
-.card-4 .img-sec {
-    width: 130px;
-    height: 130px;
-    background-color: white;
-    border-radius: 90px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-4 .img-sec img {
-    width: 150px;
-}
-
-.card-4 .img-sec:hover {
-    color: white;
-    background-color: orange;
-    transition: all 0.8s ease-in-out;
-    scale: 1.1;
-}
-
-
-.five {
-    width: 100%;
-    height: 100vh;
-    border: 5px solid red;
+.card2{
+    width: 28%;
+    height: 60%;
+    /* border: 3px solid goldenrod; */
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    background: url(modish-modular-kitchen-and-bedroom-set-satellite-ahmedabad-italian-modular-kitchen-dealers-1o0cn3sdk7.avif);
-    background-color: rgba(0, 0, 255, 0.425);
-    background-size: cover;
-    padding-left: 39px;
+}
+.card2 h6{
+    color: #7153d9;
+    font-size: 50px;
+}
 
+.card2 p{
+    width: 90%;
+    font-size: 18px;
+    align-items: center;
+}
+.card3{
+    width: 28%;
+    height: 60%;
+    /* border: 3px solid goldenrod; */
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
 
 }
 
-.five h5 {
-    color: orange;
-    font-size: 40px;
+.card3 h6{
+    color: #7153d9;
+    font-size: 50px;
 }
 
-.five h1 {
-    color: white;
-    font-size: 40px;
-    width: 40%;
+.card3 p{
+    width: 90%;
+    font-size: 18px;
+    align-items: center;
 }
 
-.five p {
-    color: white;
-    font-size: 22px;
-    width: 40%;
-}
 
-.five button {
-    padding: 10px 25px;
-    border: none;
-    border-radius: 40px;
-    font-size: 25px;
-}
-
-.six {
+.three{
     width: 100%;
-    height: 120px;
-    border: 5px solid red;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid lawngreen; */
+    background-color:#f2f5fb;
+    
+}
+.three .left{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    /* border: 3px solid hotpink; */
+    gap: 30px;
+    padding-left: 50px;
+}
+.three .left h5{
+    font-size: 20px;
+    color: #7153d9;
+}
+.three .left h1{
+    font-size: 70px;
+    width: 80%;
+}
+.three .left h4{
+    font-size: 20px;
+    width: 70%;
+}
+
+.three .left p{
+    font-size: 20px;
+    width: 70%;
+}
+.three .left button{
+    padding: 18px 45px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    background-color: blue;
+    color: white;
+}
+
+.three .right{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 3px solid darkgrey; */
+}
+.four{
+    width: 100%;
+    height: 120vh;
+    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
     /* flex-direction: column; */
-    background-color: #23262d;
+}
+.four .left{
+    width: 100%;
+    height: 120vh;
+    border: 2px solid darkolivegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
 
 }
-
-.seven {
+.four .right{
     width: 100%;
-    height: 150vh;
+    height: 120vh;
     border: 2px solid red;
-    background-color: #23262d;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+.four .card-1{
 
-.seven h5 {
-    color: orange;
-    font-size: 30px;
-}
-
-.seven h1 {
-    color: white;
-    font-size: 55px;
-}
-
-.seven p {
-    color: white;
-    font-size: 20px;
-    width: 60%;
-}
-
-.crads2 {
-    width: 100%;
-    height: 100%;
-    border: 2px solid rgb(234, 230, 238);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.top {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    border: 2px solid gray;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.top img {
-    width: 400px;
-}
-
-.bottom {
-    width: 100%;
-    height: 50%;
-    border: 2px solid rosybrown;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.bottom img {
-    width: 400px;
-}
-
-.eight {
-    width: 100%;
-    height: 100vh;
-    border: 2px solid violet;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #23262d;
-}
-
-.eight .left {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 3px solid green;
-}
-
-.eight .left img {
-    width: 100%;
-    padding-bottom: 30%;
-}
-.eight .right {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    border: 3px solid green;
-    padding-left: 30px;
-    flex-direction: column;
-}
-
-.eight .right h1 {
-    font-size: 45px;
-    width: 70%;
-    color: white;
-}
-
-.eight .right p {
-    font-size: 20px;
-    width: 74%;
-    color: white;
-}
-
-.eight .right button{
-    padding: 10px 25px;
-    font-size: 20px;
-    border: none;
-    border-radius: 60px;
-    color: white;
-    background-color: orange;
-}
-.right button:hover{
-    background-color: rgb(238, 174, 56);
-    color: white;
-    transition: 1s all ease-in-out;
 }
